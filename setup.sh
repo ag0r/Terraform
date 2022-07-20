@@ -30,3 +30,8 @@ fi
 
 unzip awscliv2.zip
 sudo ./aws/install
+
+echo "export AWS_ACCESS_KEY_ID=AKIAT2JODX77N6CDY5LA" >> /home/vagrant/.bashrc
+echo "export AWS_SECRET_ACCESS_KEY=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" >> /home/vagrant/.bashrc
+
+source /home/vagrant/.bashrc && aws sts get-caller-identity
